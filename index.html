@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bowling Industries</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --brand-dark:#0b2545;
+      --brand-accent:#0077cc;
+      --muted:#6c757d;
+      --bg:#f7f9fb;
+    }
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#222; }
+    .hero { background: linear-gradient(180deg, rgba(11,37,69,0.06), rgba(11,37,69,0.02)); padding:72px 0; }
+    .brand { font-weight:700; color:var(--brand-dark); font-size:1.6rem; letter-spacing:0.4px; }
+    .tag { color:var(--brand-accent); font-weight:600; }
+    .card-title { color:var(--brand-dark); font-weight:600; }
+    footer { background:#fff; border-top:1px solid #e9ecef; padding:20px 0; color:var(--muted); }
+    .note { font-size:0.9rem; color:var(--muted); }
+    .project-status { font-size:0.85rem; padding:.2rem .5rem; border-radius:.25rem; background:#eef6ff; color:var(--brand-accent); font-weight:600; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="brand">Bowling Industries</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#devlog">Dev Log</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container text-center">
+      <h1 class="display-6">Bowling Industries</h1>
+      <p class="lead mt-2">Research & prototyping in autonomous navigation simulations and wearable robotic systems.</p>
+      <p class="note">Legal Owner: Joshua Bowling — Brand: Bowling Industries</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <!-- About -->
+    <section id="about" class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h2 class="h4">About</h2>
+          <p class="text-muted">
+            Bowling Industries focuses on saving lives and making our service members' lives a bit easier. 
+            While we are NOT officially associated with the US military, we soon hope to be.
+          </p>
+          <p>
+            Primary research areas: AI missile guidance systems, AI-assisted exoskeleton suits, body armor, jet engines, and robotics.
+          </p>
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="images/placeholder-hero.svg" alt="placeholder" style="max-width:260px; opacity:.9;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects / Research -->
+    <section id="projects" class="mb-5">
+      <h2 class="h4 mb-3">Selected Research Areas</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">AI Assisted Missile Guidance System Research</h3>
+                <div class="project-status">Research</div>
+              </div>
+              <p class="card-text text-muted">
+                Research on Artificial Intelligence's ability to accurately guide missiles while being mindful of and protecting civilians, Artificial Intelligence's ability to work under rough conditions,
+                And whether AI could still guide missiles within clouds, heavy rain, and warfare conditions.
+                
+              </p>
+              <ul class="mb-0">
+                <li>Simulation-based algorithm evaluation</li>
+                <li>Sensor fusion & robustness testing</li>
+                <li>Safety, verification & validation workflows</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white note">Status: Prototype simulations and logged experiments.</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="card-title h5 mb-0">Wearable Robotics — Assistive Exoskeleton Concepts</h3>
+                <div class="project-status">Concept & Testing</div>
+              </div>
+              <p class="card-text text-muted">
+                Conceptual and simulation work on powered exoskeletons intended for mobility assistance and load-bearing support.
+                Emphasis is on human factors, safety, and military applications. No operational or weaponized prototypes are currently being developed.
+              </p>
+              <ul class="mb-0">
+                <li>Human-in-the-loop simulation</li>
+                <li>Ergonomics and safe actuation concepts</li>
+                <li>Control algorithms for assistive motion (simulation only)</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-white note">Status: Concept design, simulation validation pending formal review.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dev Log -->
+    <section id="devlog" class="mb-5">
+      <h2 class="h4 mb-3">Development Log</h2>
+      <div class="list-group">
+        <div class="list-group-item">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">2025-11-02 — Simulation: obstacle avoidance</h5>
+            <small class="text-muted">Commit: initial-sim-run</small>
+          </div>
+          <p class="mb-1">Ran a closed-loop simulation for obstacle avoidance. Logged sensor inputs and waypoint errors for analysis.</p>
+        </div>
+
+        <div class="list-group-item">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">2025-10-25 — Exoskeleton concept sketch</h5>
+            <small class="text-muted">Draft</small>
+          </div>
+          <p class="mb-1">Completed initial mechanical layout and weight distribution sketches for assistive exoskeletal module.</p>
+        </div>
+      </div>
+      <p class="note mt-3">All logs represent simulation and prototype-level work. For collaboration or review, contact listed below.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-5">
+      <h2 class="h4 mb-3">Contact</h2>
+      <p class="mb-1"><strong>Email:</strong> <a href="mailto:bowling.industries@gmail.com">bowling.industries@gmail.com</a></p>
+      <p class="note">If contacting about collaboration, supply limited non-sensitive details and request an NDA; Bowling Industries will only engage in authorized, lawful collaborations.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <div class="mb-1">Bowling Industries — Legal Owner: Joshua Bowling</div>
+      <div class="note">This site presents high-level research and portfolio material. No operational weapon systems or instructions are provided.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
